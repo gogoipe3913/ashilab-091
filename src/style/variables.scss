@@ -1,6 +1,13 @@
-$font-color-red: #ac4222;
-$font-color-gray: #d3d3d3;
-$font-color-gray-2: #5c5c5c;
-$font-color-white: #ffffff;
-$font-color-black: #1a1311;
-$font-color-black-2: #000000;
+// color
+$global-color-red: #ac4222;
+$global-color-gray: #d3d3d3;
+$global-color-gray-2: #5c5c5c;
+$global-color-white: #ffffff;
+$global-color-black: #1a1311;
+$global-color-black-2: #000000;
+
+// z-index
+$global-elevation-background: -999;
+$global-elevation-1: 1000000;
+$global-elevation-2: 4000000;
+$global-elevation-3: 8000000;
