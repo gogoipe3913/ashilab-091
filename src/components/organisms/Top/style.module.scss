@@ -1,0 +1,12 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixin.scss";
+
+.Top {
+  .Top__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $global-elevation-background;
+    object-fit: cover;
+  }
+}
