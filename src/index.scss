@@ -1,4 +1,5 @@
 @import "./style/_reset";
+@import "./style/variables.scss";
 
 // 英語フォント
 @font-face {
@@ -8,4 +9,5 @@
 
 body {
   font-family: "Antique Olive";
+  background-color: $global-color-gray;
 }
