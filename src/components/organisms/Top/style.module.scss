@@ -2,11 +2,64 @@
 @import "../../../style/mixin.scss";
 
 .Top {
+  position: relative;
+  width: calc(100% - 48px);
+  height: $page-max-height;
+  color: $global-color-white;
+
   .Top__background {
     position: fixed;
     top: 0;
     left: 0;
+    max-height: $page-max-height;
     z-index: $global-elevation-background;
     object-fit: cover;
+  }
+
+  .Top__logoWrapper {
+    padding: 20px 28px 0;
+  }
+
+  .Top__copyright {
+    margin-top: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .Top__bottomColumn {
+    position: absolute;
+    bottom: 12px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .Top__navItems {
+    display: flex;
+    font-size: 18px;
+  }
+
+  .Top__navItem {
+    a {
+      // transition
+      transition-timing-function: ease-in;
+      transition-duration: 0.3s;
+    }
+  }
+
+  @media (hover: hover) {
+    .Top__navItem {
+      a:hover {
+        filter: brightness(0.75);
+      }
+    }
+  }
+
+  .Top__navItem + .Top__navItem {
+    margin-left: 4px;
   }
 }

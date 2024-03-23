@@ -1,0 +1,11 @@
+@import "./style/_reset";
+
+// 英語フォント
+@font-face {
+  font-family: "Antique Olive";
+  src: url(../static/fonts/AntiqueOlive/antiqueOlive.woff) format("woff");
+}
+
+body {
+  font-family: "Antique Olive";
+}

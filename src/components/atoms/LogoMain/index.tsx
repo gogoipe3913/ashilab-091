@@ -10,8 +10,6 @@ const LogoMain: React.FC<LogoMainProps> = ({ isColored = false }) =>
       id="グループ_6"
       data-name="グループ 6"
       xmlns="http://www.w3.org/2000/svg"
-      width="1254.366"
-      height="361.854"
       viewBox="0 0 1254.366 361.854"
     >
       <defs>
@@ -88,12 +86,7 @@ const LogoMain: React.FC<LogoMainProps> = ({ isColored = false }) =>
       </g>
     </svg>
   ) : (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1257.392"
-      height="362.727"
-      viewBox="0 0 1257.392 362.727"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1257.392 362.727">
       <defs>
         <clipPath id="clip-path">
           <rect
