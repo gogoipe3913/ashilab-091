@@ -1,0 +1,31 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixin.scss";
+
+.Reservation {
+  width: calc(100% - 48px);
+  padding: 128px 180px 84px;
+
+  .Reservation__title + .Reservation__heading {
+    margin-top: 20px;
+  }
+
+  .Reservation__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Reservation__headingImage {
+    max-width: 600px;
+  }
+
+  .Reservation__headingText {
+    // 縦書き指定
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+
+  .Reservation__headingSubtitle {
+    font-size: 12px;
+    color: $global-color-gray-2;
+  }
+}
