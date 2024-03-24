@@ -12,6 +12,7 @@
   background-color: $global-color-yellow;
   transition-timing-function: ease-in;
   transition-duration: 0.3s;
+  z-index: $global-elevation-1;
 
   @media (hover: hover) {
     &.OnlineStoreLink:hover {
