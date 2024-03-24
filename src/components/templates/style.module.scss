@@ -1,2 +1,11 @@
-.Templates {
+@import "../../style/variables.scss";
+@import "../../style/mixin.scss";
+
+.Templates__locationShooting,
+.Templates__foodEvents,
+.Templates__businessParty,
+.Templates__cookingClass,
+.Templates__access,
+.Templates__reservation {
+  border-top: 1px solid $global-color-black-2;
 }
