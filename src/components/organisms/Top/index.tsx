@@ -3,7 +3,7 @@ import backgroundImage from "/images/top_bg.png";
 import style from "./style.module.scss";
 import LogoMain from "../../atoms/LogoMain";
 
-const NAVIGATION_ITEMS = [
+export const NAVIGATION_ITEMS = [
   { id: "about", displayText: "ABOUT," },
   { id: "locationShooting", displayText: "LOCATION SHOOTING," },
   { id: "foodEvents", displayText: "FOOD EVENTS," },
