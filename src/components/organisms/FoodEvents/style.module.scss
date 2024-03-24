@@ -1,0 +1,42 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixin.scss";
+
+.FoodEvents {
+  width: calc(100% - 48px);
+  padding: 128px 180px 84px;
+
+  .FoodEvents__title + .FoodEvents__heading {
+    margin-top: 20px;
+  }
+
+  .FoodEvents__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .FoodEvents__headingImage {
+    max-width: 600px;
+  }
+
+  .FoodEvents__headingText {
+    // 縦書き指定
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+
+  .FoodEvents__headingSubtitle {
+    font-size: 12px;
+    color: $global-color-gray-2;
+  }
+
+  .FoodEvents__description {
+    margin-top: 68px;
+    line-height: 2;
+  }
+
+  .FoodEvents__descriptionEn {
+    margin-top: 36px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
