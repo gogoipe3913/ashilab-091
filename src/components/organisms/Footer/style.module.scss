@@ -1,0 +1,44 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixin.scss";
+
+.Footer {
+  position: relative;
+  padding-bottom: 68px;
+  width: calc(100% - 48px);
+  color: $global-color-black-2;
+
+  .Footer__logoWrapper {
+    padding: 20px 28px 0;
+  }
+
+  .Footer__nav,
+  .Footer__address {
+    padding-left: 48px;
+  }
+
+  .Footer__navItems {
+    display: flex;
+    font-size: 18px;
+  }
+
+  .Footer__navItem {
+    a {
+      color: $global-color-black-2;
+      // transition
+      transition-timing-function: ease-in;
+      transition-duration: 0.3s;
+    }
+  }
+
+  @media (hover: hover) {
+    .Footer__navItem {
+      a:hover {
+        filter: brightness(1.55);
+      }
+    }
+  }
+
+  .Footer__navItem + .Footer__navItem {
+    margin-left: 4px;
+  }
+}
