@@ -6,7 +6,7 @@ import LogoMain from "../../atoms/LogoMain";
 const NAVIGATION_ITEMS = [
   { id: "about", displayText: "ABOUT," },
   { id: "locationShooting", displayText: "LOCATION SHOOTING," },
-  { id: "events", displayText: "EVENTS," },
+  { id: "foodEvents", displayText: "FOOD EVENTS," },
   { id: "businessParty", displayText: "BUSINESS PARTY," },
   { id: "cookingClass", displayText: "COOKING CLASS," },
   { id: "access", displayText: "ACCESS," },
