@@ -2,6 +2,7 @@ import React from "react";
 import backgroundImage from "/images/top_bg.png";
 import style from "./style.module.scss";
 import LogoMain from "../../atoms/LogoMain";
+import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";
 
 export const NAVIGATION_ITEMS = [
   { id: "about", displayText: "ABOUT," },
@@ -13,8 +14,15 @@ export const NAVIGATION_ITEMS = [
 ];
 
 const Top: React.FC = () => {
+  const isSp = useMediaQuery(mediaQuery.sp);
+
   return (
     <div id="Top" className={style.Top}>
+      {isSp && (
+        <p className={style.Top__address}>
+          2-6-5, Komagata, Taito Ku, Tokyo To, 111-0043, Japan
+        </p>
+      )}
       <img
         src={backgroundImage}
         alt="キッチンスタジオの画像"
@@ -26,20 +34,22 @@ const Top: React.FC = () => {
         <LogoMain />
       </div>
       <p className={style.Top__copyright}>©︎2024 ashi lab</p>
-      <div className={style.Top__bottomColumn}>
-        <nav>
-          <ul className={style.Top__navItems}>
-            {NAVIGATION_ITEMS.map((item, index) => (
-              <li key={index} className={style.Top__navItem}>
-                <a href={`#${item.id}`} className={style.Top__navLink}>
-                  {item.displayText}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <p>2-6-5, Komagata, Taito Ku, Tokyo To, 111-0043, Japan</p>
-      </div>
+      {!isSp && (
+        <div className={style.Top__bottomColumn}>
+          <nav>
+            <ul className={style.Top__navItems}>
+              {NAVIGATION_ITEMS.map((item, index) => (
+                <li key={index} className={style.Top__navItem}>
+                  <a href={`#${item.id}`} className={style.Top__navLink}>
+                    {item.displayText}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <p>2-6-5, Komagata, Taito Ku, Tokyo To, 111-0043, Japan</p>
+        </div>
+      )}
     </div>
   );
 };

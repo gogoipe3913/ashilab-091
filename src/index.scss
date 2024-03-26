@@ -1,5 +1,6 @@
 @import "./style/_reset";
 @import "./style/variables.scss";
+@import "./style/mixin.scss";
 
 body {
   font-family: "Antique Olive";
@@ -8,4 +9,8 @@ body {
 
 h2 {
   font-size: 1.8em;
+
+  @include respondToLg {
+    font-size: 1.5em;
+  }
 }

@@ -33,11 +33,28 @@
     p + p {
       margin-left: 120px;
     }
+
+    @include respondToLg {
+      font-size: 14px;
+    }
   }
 
   .Access__descriptionEn {
     margin-top: 4px;
     font-size: 16px;
     color: $global-color-gray-3;
+  }
+
+  .Access__description,
+  .Access__descriptionEn,
+  .Access__descriptionEn + p {
+    @include respondToLg {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .Access__description,
+  .Access__descriptionEn + p {
+    font-family: "A P-OTF UD Shin Go Pr6N";
   }
 }

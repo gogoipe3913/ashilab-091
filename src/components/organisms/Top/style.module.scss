@@ -8,6 +8,18 @@
   max-height: $page-max-height;
   color: $global-color-white;
 
+  @include respondToLg {
+    padding-top: 16px;
+    width: 100%;
+  }
+
+  .Top__address {
+    @include respondToLg {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
   .Top__background {
     position: absolute;
     top: 0;
@@ -19,6 +31,10 @@
 
   .Top__logoWrapper {
     padding: 20px 28px 0;
+
+    @include respondToLg {
+      padding: 20px 12px 0;
+    }
   }
 
   .Top__copyright {
@@ -26,6 +42,11 @@
     padding-right: 20px;
     font-size: 14px;
     text-align: right;
+
+    @include respondToLg {
+      margin-top: unset;
+      padding-right: 12px;
+    }
   }
 
   .Top__bottomColumn {

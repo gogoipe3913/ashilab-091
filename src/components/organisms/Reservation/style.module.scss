@@ -19,6 +19,10 @@
 
   .Reservation__headingImage {
     max-width: 600px;
+
+    @include respondToLg {
+      width: 240px;
+    }
   }
 
   .Reservation__headingText {

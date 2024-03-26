@@ -7,13 +7,33 @@
   width: calc(100% - 48px);
   color: $global-color-black-2;
 
+  @include respondToLg {
+    width: 100%;
+    padding-bottom: unset;
+  }
+
   .Footer__logoWrapper {
     padding: 20px 28px 0;
+
+    @include respondToLg {
+      padding: 0 12px;
+    }
   }
 
   .Footer__nav,
   .Footer__address {
     padding-left: 48px;
+
+    @include respondToLg {
+      padding: unset;
+      text-align: center;
+    }
+  }
+
+  .Footer__address {
+    @include respondToLg {
+      font-size: 14px;
+    }
   }
 
   .Footer__navItems {

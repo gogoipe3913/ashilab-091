@@ -12,11 +12,15 @@ import Footer from "../organisms/Footer";
 import Access from "../organisms/Access";
 import Reservation from "../organisms/Reservation";
 import UsageFee from "../organisms/UsageFee";
+import { mediaQuery, useMediaQuery } from "../hooks/mediaQuery";
+import SpNavigation from "../organisms/SpNavigation";
 
 const Templates: React.FC = () => {
+  const isSp = useMediaQuery(mediaQuery.sp);
+
   return (
     <div className={style.Templates}>
-      <ReserveButton />
+      {isSp ? <SpNavigation /> : <ReserveButton />}
       <Top />
       <OnlineStoreLink />
       <div className={style.Templates__contents}>

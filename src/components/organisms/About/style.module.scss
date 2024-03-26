@@ -4,6 +4,10 @@
 .About {
   padding: 128px 0 84px;
 
+  @include respondToLg {
+    padding: 100px 0 84px;
+  }
+
   .About__heading {
     display: flex;
     justify-content: space-between;
@@ -11,6 +15,10 @@
 
   .About__headingImage {
     max-width: 600px;
+
+    @include respondToLg {
+      width: 240px;
+    }
   }
 
   .About__headingText {
@@ -31,6 +39,10 @@
   .About__description {
     margin-top: 68px;
     line-height: 2;
+
+    @include respondToLg {
+      font-size: 14px;
+    }
   }
 
   .About__descriptionEn {

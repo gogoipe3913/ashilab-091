@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respondToLg {
+      padding: 0 24px;
+    }
   }
 
   .Templates__about,
@@ -19,6 +23,12 @@
   .Templates__reservation {
     max-width: 800px;
     min-width: 700px;
+
+    @include respondToLg {
+      max-width: initial;
+      min-width: initial;
+      width: 100%;
+    }
   }
 
   .Templates__locationShooting,
@@ -29,6 +39,6 @@
   .Templates__usageFee,
   .Templates__reservation {
     padding: 84px 0;
-    border-top: 1px solid $global-color-black-2;
+    border-top: 1px solid $global-color-gray-3;
   }
 }

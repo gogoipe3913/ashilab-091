@@ -1,7 +1,7 @@
 // デバイスブレイクポイントの設定
 $breakpoint-sm: 576px; // スマートフォン以下
 $breakpoint-md: 768px; // タブレット以下
-$breakpoint-lg: 992px; // デスクトップ以下
+$breakpoint-lg: 992px; // タブレット以下 (このリポジトリでは基本はこのmixinを使う)
 
 // レスポンシブスタイルのmixin
 @mixin respondToSm {

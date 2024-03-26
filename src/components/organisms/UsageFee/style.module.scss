@@ -15,6 +15,10 @@
   .UsageFee__heading {
     display: flex;
     justify-content: space-between;
+
+    @include respondToLg {
+      margin-top: 80px;
+    }
   }
 
   .UsageFee__headingTitle {
@@ -23,11 +27,25 @@
 
   .UsageFee__contentSubtitle {
     font-size: 16px;
+
+    @include respondToLg {
+      font-size: 12px;
+    }
   }
 
   .UsageFee__contents {
     flex-grow: 1;
     max-width: 600px;
+
+    @include respondToLg {
+      width: 100%;
+    }
+  }
+
+  .UsageFee__content + .UsageFee__content {
+    @include respondToLg {
+      margin-top: 48px;
+    }
   }
 
   .UsageFee__contentUpper {
@@ -38,24 +56,64 @@
 
   .UsageFee__contentTitle {
     font-size: 36px;
+
+    @include respondToLg {
+      font-size: 24px;
+    }
+  }
+
+  .UsageFee__contentStudioFees {
+    @include respondToLg {
+      padding: 12px 0;
+      border-top: 1px solid $global-color-gray-3;
+      border-bottom: 1px solid $global-color-gray-3;
+    }
+  }
+
+  .UsageFee__priceSingle {
+    @include respondToLg {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-top: 1px solid $global-color-gray-3;
+      border-bottom: 1px solid $global-color-gray-3;
+    }
   }
 
   .UsageFee__priceSingle,
   .UsageFee__contentStudioFees {
     margin-top: 32px;
+
+    @include respondToLg {
+      margin-top: 8px;
+    }
   }
 
   .UsageFee__contentStudioFee {
     display: flex;
     justify-content: space-between;
+
+    @include respondToLg {
+      flex-direction: column;
+    }
   }
 
   .UsageFee__contentStudioFee + .UsageFee__contentStudioFee {
     margin-top: 32px;
+
+    @include respondToLg {
+      margin-top: 8px;
+      padding-top: 12px;
+      border-top: 1px solid $global-color-gray-3;
+    }
   }
 
   .UsageFee__prices {
     display: flex;
+
+    @include respondToLg {
+      margin-top: 8px;
+    }
   }
 
   .UsageFee__priceBox {
@@ -101,18 +159,29 @@
     margin: 80px 0;
     width: 100px;
     height: 1px;
-    background-color: $global-color-black;
+    background-color: $global-color-gray-3;
   }
 
   .UsageFee__contentText {
     margin-top: 40px;
     line-height: 2;
+
+    @include respondToLg {
+      margin-top: 4px;
+      padding-top: 8px;
+      font-size: 14px;
+      border-top: 1px solid $global-color-gray-3;
+    }
   }
 
   .UsageFee__headingText {
     // 縦書き指定
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+
+    @include respondToLg {
+      margin-left: auto;
+    }
   }
 
   .UsageFee__headingSubtitle {

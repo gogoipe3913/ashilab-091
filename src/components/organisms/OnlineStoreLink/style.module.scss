@@ -3,6 +3,7 @@
 
 .OnlineStoreLink {
   position: fixed;
+
   right: 80px;
   bottom: 48px;
   display: block;
@@ -13,6 +14,13 @@
   transition-timing-function: ease-in;
   transition-duration: 0.3s;
   z-index: $global-elevation-1;
+
+  @include respondToLg {
+    right: 20px;
+    bottom: 56px;
+    width: 60px;
+    height: 60px;
+  }
 
   @media (hover: hover) {
     &.OnlineStoreLink:hover {
@@ -29,5 +37,11 @@
     color: $global-color-white;
     font-size: 20px;
     line-height: 1;
+
+    @include respondToLg {
+      height: 60px;
+      font-size: 12px;
+      line-height: 1.2;
+    }
   }
 }
