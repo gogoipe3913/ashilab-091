@@ -1,0 +1,122 @@
+@import "../../../style/variables.scss";
+@import "../../../style/mixin.scss";
+
+.UsageFee {
+  width: calc(100% - 48px);
+
+  .UsageFee__title {
+    font-family: Noto Sans, Noto Sans JP, sans-serif;
+  }
+
+  .UsageFee__title + .UsageFee__heading {
+    margin-top: 60px;
+  }
+
+  .UsageFee__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .UsageFee__headingTitle {
+    font-weight: bold;
+  }
+
+  .UsageFee__contentSubtitle {
+    font-size: 16px;
+  }
+
+  .UsageFee__contents {
+    flex-grow: 1;
+    max-width: 600px;
+  }
+
+  .UsageFee__contentUpper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .UsageFee__contentTitle {
+    font-size: 36px;
+  }
+
+  .UsageFee__priceSingle,
+  .UsageFee__contentStudioFees {
+    margin-top: 32px;
+  }
+
+  .UsageFee__contentStudioFee {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .UsageFee__contentStudioFee + .UsageFee__contentStudioFee {
+    margin-top: 32px;
+  }
+
+  .UsageFee__prices {
+    display: flex;
+  }
+
+  .UsageFee__priceBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .UsageFee__priceBox + .UsageFee__priceBox {
+    margin-left: 32px;
+  }
+
+  .UsageFee__priceBoxTitle {
+    display: flex;
+    flex-direction: column;
+    min-width: 52px;
+  }
+
+  .UsageFee__priceBoxTitleEnText {
+    font-size: 11px;
+    color: $global-color-gray-3;
+  }
+
+  .UsageFee__priceBoxTitleText {
+    font-size: 14px;
+  }
+
+  .UsageFee__priceBoxTitle + .UsageFee__priceBoxTime,
+  .UsageFee__priceBoxTitle + .UsageFee__priceBoxPrice {
+    margin-left: 8px;
+  }
+
+  .UsageFee__priceBoxTime,
+  .UsageFee__priceBoxPrice {
+    font-size: 16px;
+    font-family: Noto Sans, Noto Sans JP, sans-serif;
+  }
+
+  .UsageFee__priceBoxPrice {
+    font-weight: bold;
+  }
+
+  .UsageFee__contentSeparator {
+    margin: 80px 0;
+    width: 100px;
+    height: 1px;
+    background-color: $global-color-black;
+  }
+
+  .UsageFee__contentText {
+    margin-top: 40px;
+    line-height: 2;
+  }
+
+  .UsageFee__headingText {
+    // 縦書き指定
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+
+  .UsageFee__headingSubtitle {
+    font-size: 12px;
+    color: $global-color-gray-2;
+  }
+}
