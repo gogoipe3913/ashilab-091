@@ -9,7 +9,8 @@
 
   @include respondToLg {
     width: 100%;
-    padding-bottom: unset;
+    // フッター分のpaddingを持つ
+    padding-bottom: 36px;
   }
 
   .Footer__logoWrapper {
