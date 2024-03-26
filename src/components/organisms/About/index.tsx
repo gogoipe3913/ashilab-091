@@ -1,9 +1,14 @@
 import React from "react";
 import mainImage from "/public/images/image2.png";
 import style from "./style.module.scss";
+import classNames from "classnames";
 
-const About: React.FC = () => (
-  <div id="about" className={style.About}>
+type AboutProps = {
+  className?: string;
+};
+
+const About: React.FC<AboutProps> = ({ className = "" }) => (
+  <div id="about" className={classNames(style.About, className)}>
     <div className={style.About__heading}>
       <img
         src={mainImage}

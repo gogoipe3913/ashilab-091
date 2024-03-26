@@ -20,7 +20,7 @@ const Templates: React.FC = () => {
       <Top />
       <OnlineStoreLink />
       <div className={style.Templates__contents}>
-        <About />
+        <About className={style.Templates__about} />
         <LocationShooting className={style.Templates__locationShooting} />
         <FoodEvents className={style.Templates__foodEvents} />
         <BusinessParty className={style.Templates__businessParty} />

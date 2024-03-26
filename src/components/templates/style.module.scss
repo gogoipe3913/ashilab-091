@@ -3,7 +3,22 @@
 
 .Templates {
   .Templates__contents {
-    padding: 0 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Templates__about,
+  .Templates__locationShooting,
+  .Templates__foodEvents,
+  .Templates__businessParty,
+  .Templates__cookingClass,
+  .Templates__access,
+  .Templates__usageFee,
+  .Templates__reservation {
+    max-width: 800px;
+    min-width: 700px;
   }
 
   .Templates__locationShooting,
