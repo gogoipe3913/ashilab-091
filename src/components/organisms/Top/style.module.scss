@@ -4,7 +4,8 @@
 .Top {
   position: relative;
   width: calc(100% - 48px);
-  height: $page-max-height;
+  height: 100svh;
+  max-height: $page-max-height;
   color: $global-color-white;
 
   .Top__background {

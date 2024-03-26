@@ -33,7 +33,7 @@
   @media (hover: hover) {
     .Footer__navItem {
       a:hover {
-        filter: brightness(1.55);
+        color: $global-color-black-hover;
       }
     }
   }

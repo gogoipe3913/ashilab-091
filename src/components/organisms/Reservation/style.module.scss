@@ -3,7 +3,11 @@
 
 .Reservation {
   width: calc(100% - 48px);
-  padding: 128px 180px 84px;
+  padding: 128px 0 84px;
+
+  .Reservation__title {
+    font-family: Noto Sans, Noto Sans JP, sans-serif;
+  }
 
   .Reservation__title + .Reservation__heading {
     margin-top: 20px;
@@ -22,6 +26,10 @@
     // 縦書き指定
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+  }
+
+  .Reservation__headingTitle {
+    font-weight: bold;
   }
 
   .Reservation__headingSubtitle {

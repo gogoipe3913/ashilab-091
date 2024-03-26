@@ -22,8 +22,12 @@ const LocationShooting: React.FC<LocationShootingProps> = ({
         className={style.LocationShooting__headingImage}
       />
       <h2 className={style.LocationShooting__headingText}>
-        <p>クリエイティビティーを刺激する</p>
-        <p>ちょっぴり大人な空間</p>
+        <p className={style.LocationShooting__headingTitle}>
+          クリエイティビティーを刺激する
+        </p>
+        <p className={style.LocationShooting__headingTitle}>
+          ちょっぴり大人な空間
+        </p>
         <p className={style.LocationShooting__headingSubtitle}>
           Location Shooting
         </p>

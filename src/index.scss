@@ -1,13 +1,11 @@
 @import "./style/_reset";
 @import "./style/variables.scss";
 
-// 英語フォント
-@font-face {
-  font-family: "Antique Olive";
-  src: url(../static/fonts/AntiqueOlive/antiqueOlive.woff) format("woff");
-}
-
 body {
   font-family: "Antique Olive";
   background-color: $global-color-gray;
+}
+
+h2 {
+  font-size: 1.8em;
 }

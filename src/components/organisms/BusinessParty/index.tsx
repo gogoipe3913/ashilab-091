@@ -20,8 +20,10 @@ const BusinessParty: React.FC<BusinessPartyProps> = ({ className = "" }) => (
         className={style.BusinessParty__headingImage}
       />
       <h2 className={style.BusinessParty__headingText}>
-        <p>食事と会話の心地よい</p>
-        <p>コミュニケーション</p>
+        <p className={style.BusinessParty__headingTitle}>
+          食事と会話の心地よい
+        </p>
+        <p className={style.BusinessParty__headingTitle}>コミュニケーション</p>
         <p className={style.BusinessParty__headingSubtitle}>Business Party</p>
       </h2>
     </div>

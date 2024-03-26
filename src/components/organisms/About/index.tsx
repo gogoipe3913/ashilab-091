@@ -11,8 +11,8 @@ const About: React.FC = () => (
         className={style.About__headingImage}
       />
       <h2 className={style.About__headingText}>
-        <p>キッチンとバルコニーのある</p>
-        <p>レンタルスタジオ</p>
+        <p className={style.About__headingTitle}>キッチンとバルコニーのある</p>
+        <p className={style.About__headingTitle}>レンタルスタジオ</p>
         <p className={style.About__headingSubtitle}>
           with kitchen and balcony rental studio
         </p>

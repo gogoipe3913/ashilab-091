@@ -17,8 +17,12 @@ const CookingClass: React.FC<CookingClassProps> = ({ className = "" }) => (
         className={style.CookingClass__headingImage}
       />
       <h2 className={style.CookingClass__headingText}>
-        <p>「美味しい」「楽しい」を紡ぐ</p>
-        <p>アットホームなレッスン</p>
+        <p className={style.CookingClass__headingTitle}>
+          「美味しい」「楽しい」を紡ぐ
+        </p>
+        <p className={style.CookingClass__headingTitle}>
+          アットホームなレッスン
+        </p>
         <p className={style.CookingClass__headingSubtitle}>Cooking Class</p>
       </h2>
     </div>

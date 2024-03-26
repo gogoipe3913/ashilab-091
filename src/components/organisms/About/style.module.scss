@@ -3,7 +3,7 @@
 
 .About {
   width: calc(100% - 48px);
-  padding: 128px 180px 84px;
+  padding: 128px 0 84px;
 
   .About__heading {
     display: flex;
@@ -18,6 +18,10 @@
     // 縦書き指定
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+  }
+
+  .About__headingTitle {
+    font-weight: bold;
   }
 
   .About__headingSubtitle {

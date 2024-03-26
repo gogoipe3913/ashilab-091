@@ -1,11 +1,19 @@
 @import "../../style/variables.scss";
 @import "../../style/mixin.scss";
 
-.Templates__locationShooting,
-.Templates__foodEvents,
-.Templates__businessParty,
-.Templates__cookingClass,
-.Templates__access,
-.Templates__reservation {
-  border-top: 1px solid $global-color-black-2;
+.Templates {
+  .Templates__contents {
+    padding: 0 180px;
+  }
+
+  .Templates__locationShooting,
+  .Templates__foodEvents,
+  .Templates__businessParty,
+  .Templates__cookingClass,
+  .Templates__access,
+  .Templates__usageFee,
+  .Templates__reservation {
+    padding: 84px 0;
+    border-top: 1px solid $global-color-black-2;
+  }
 }

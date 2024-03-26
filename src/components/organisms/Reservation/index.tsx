@@ -17,7 +17,7 @@ const Reservation: React.FC<ReservationProps> = ({ className = "" }) => (
         className={style.Reservation__headingImage}
       />
       <h2 className={style.Reservation__headingText}>
-        <p>ご予約はこちらまで</p>
+        <p className={style.Reservation__headingTitle}>ご予約はこちらまで</p>
         <p className={style.Reservation__headingSubtitle}>Reservation table</p>
       </h2>
     </div>

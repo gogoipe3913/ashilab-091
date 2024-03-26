@@ -17,8 +17,10 @@ const FoodEvents: React.FC<FoodEventsProps> = ({ className = "" }) => (
         className={style.FoodEvents__headingImage}
       />
       <h2 className={style.FoodEvents__headingText}>
-        <p>「作る」「食べる」＋αの</p>
-        <p>多様性空間</p>
+        <p className={style.FoodEvents__headingTitle}>
+          「作る」「食べる」＋αの
+        </p>
+        <p className={style.FoodEvents__headingTitle}>多様性空間</p>
         <p className={style.FoodEvents__headingSubtitle}>Food Events</p>
       </h2>
     </div>

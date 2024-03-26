@@ -11,22 +11,26 @@ import CookingClass from "../organisms/CookingClass";
 import Footer from "../organisms/Footer";
 import Access from "../organisms/Access";
 import Reservation from "../organisms/Reservation";
+import UsageFee from "../organisms/UsageFee";
 
 const Templates: React.FC = () => {
   return (
-    <>
+    <div className={style.Templates}>
       <ReserveButton />
       <Top />
       <OnlineStoreLink />
-      <About />
-      <LocationShooting className={style.Templates__locationShooting} />
-      <FoodEvents className={style.Templates__foodEvents} />
-      <BusinessParty className={style.Templates__businessParty} />
-      <CookingClass className={style.Templates__cookingClass} />
-      <Access className={style.Templates__access} />
-      <Reservation className={style.Templates__reservation} />
+      <div className={style.Templates__contents}>
+        <About />
+        <LocationShooting className={style.Templates__locationShooting} />
+        <FoodEvents className={style.Templates__foodEvents} />
+        <BusinessParty className={style.Templates__businessParty} />
+        <CookingClass className={style.Templates__cookingClass} />
+        <Access className={style.Templates__access} />
+        <UsageFee className={style.Templates__usageFee} />
+        <Reservation className={style.Templates__reservation} />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

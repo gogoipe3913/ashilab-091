@@ -3,21 +3,20 @@
 
 .Access {
   width: calc(100% - 48px);
-  padding: 128px 180px 84px;
 
   .Access__heading {
     display: flex;
     justify-content: space-between;
   }
 
-  .Access__headingImage {
-    max-width: 600px;
-  }
-
   .Access__headingText {
     // 縦書き指定
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
+  }
+
+  .Access__headingTitle {
+    font-weight: bold;
   }
 
   .Access__headingSubtitle {
@@ -27,11 +26,18 @@
 
   .Access__description {
     margin-top: 68px;
+    display: flex;
+    width: 100%;
+    font-family: "A P-OTF UD Shin Go Pr6N";
+
+    p + p {
+      margin-left: 120px;
+    }
   }
 
   .Access__descriptionEn {
-    margin-top: 8px;
-    font-size: 13px;
-    color: $global-color-gray-2;
+    margin-top: 4px;
+    font-size: 16px;
+    color: $global-color-gray-3;
   }
 }
