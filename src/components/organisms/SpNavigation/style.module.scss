@@ -13,4 +13,109 @@
   color: $global-color-white;
   background-color: $global-color-red;
   z-index: $global-elevation-1;
+
+  .SpNavigation__reserve {
+    position: relative;
+    z-index: $global-elevation-3;
+  }
+
+  .SpNavigation__hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    z-index: $global-elevation-3;
+  }
+
+  .SpNavigation__hamburgerLine {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $global-color-white;
+    // transition
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+
+    &--top {
+      position: relative;
+      top: 4px;
+      transform: rotate(225deg);
+    }
+    &--middle {
+      display: none;
+    }
+    &--bottom {
+      position: relative;
+      top: -3px;
+      transform: rotate(-225deg);
+    }
+  }
+
+  .SpNavigation__hamburgerLine + .SpNavigation__hamburgerLine {
+    margin-top: 5px;
+  }
+}
+
+// 例外として1ファイルに2つの親クラスを書く
+.SpNavigationContents {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  width: 100%;
+  height: 100svh;
+  background-color: $global-color-red;
+  transform: translateX(100%);
+
+  // transition
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+
+  &--displayed {
+    transform: translateX(0);
+  }
+
+  .SpNavigationContents__address {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .SpNavigationContents__logoWrapper {
+    padding: 20px 12px 0;
+  }
+
+  .SpNavigationContents__copyright {
+    padding-right: 12px;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .SpNavigationContents__nav {
+    height: calc(100% - 200px);
+  }
+
+  .SpNavigationContents__navItems {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .SpNavigationContents__navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .SpNavigationContents__navItemSeparator {
+    // セパレーターで余白をとる
+    margin: 20px 0;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: $global-color-white;
+  }
 }
