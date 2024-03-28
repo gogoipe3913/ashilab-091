@@ -28,7 +28,8 @@
     margin-top: 68px;
     display: flex;
     width: 100%;
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "a-otf-ud-shin-go-pr6n", sans-serif;
+    font-weight: bold;
 
     p + p {
       margin-left: 120px;
@@ -45,16 +46,23 @@
     color: $global-color-gray-3;
   }
 
+  .Access__descriptionEn + p {
+    @include respondToLg {
+      margin-top: 8px;
+    }
+  }
+
   .Access__description,
   .Access__descriptionEn,
   .Access__descriptionEn + p {
     @include respondToLg {
       font-size: 14px;
-      font-weight: normal;
     }
   }
-  .Access__description,
-  .Access__descriptionEn + p {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+
+  & .Access__description,
+  & .Access__descriptionEn + p {
+    font-family: "a-otf-ud-shin-go-pr6n", sans-serif;
+    font-weight: bold;
   }
 }

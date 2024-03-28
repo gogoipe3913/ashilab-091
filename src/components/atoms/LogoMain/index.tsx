@@ -39,7 +39,7 @@ const LogoMain: React.FC<LogoMainProps> = ({ isColored = false }) =>
         fill="#2d4c54"
       />
       <g id="グループ_5" data-name="グループ 5" transform="translate(0 0)">
-        <g id="グループ_4" data-name="グループ 4" clip-path="url(#clip-path)">
+        <g id="グループ_4" data-name="グループ 4" clipPath="url(#clip-path)">
           <path
             id="パス_2"
             data-name="パス 2"
@@ -115,7 +115,7 @@ const LogoMain: React.FC<LogoMainProps> = ({ isColored = false }) =>
           fill="#fff"
         />
         <g id="グループ_5" data-name="グループ 5" transform="translate(0 0)">
-          <g id="グループ_4" data-name="グループ 4" clip-path="url(#clip-path)">
+          <g id="グループ_4" data-name="グループ 4" clipPath="url(#clip-path)">
             <path
               id="パス_2"
               data-name="パス 2"
