@@ -5,12 +5,12 @@ import LogoMain from "../../atoms/LogoMain";
 import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";
 
 export const NAVIGATION_ITEMS = [
-  { id: "about", displayText: "ABOUT," },
-  { id: "locationShooting", displayText: "LOCATION SHOOTING," },
-  { id: "foodEvents", displayText: "FOOD EVENTS," },
-  { id: "businessParty", displayText: "BUSINESS PARTY," },
-  { id: "cookingClass", displayText: "COOKING CLASS," },
-  { id: "access", displayText: "ACCESS," },
+  { id: "about", displayText: "ABOUT" },
+  { id: "locationShooting", displayText: "LOCATION SHOOTING" },
+  { id: "foodEvents", displayText: "FOOD EVENTS" },
+  { id: "businessParty", displayText: "BUSINESS PARTY" },
+  { id: "cookingClass", displayText: "COOKING CLASS" },
+  { id: "access", displayText: "ACCESS" },
 ];
 
 const Top: React.FC = () => {
@@ -41,7 +41,9 @@ const Top: React.FC = () => {
               {NAVIGATION_ITEMS.map((item, index) => (
                 <li key={index} className={style.Top__navItem}>
                   <a href={`#${item.id}`} className={style.Top__navLink}>
-                    {item.displayText}
+                    {`${item.displayText}${
+                      index !== NAVIGATION_ITEMS.length - 1 ? "," : ""
+                    }`}
                   </a>
                 </li>
               ))}
