@@ -2,48 +2,6 @@
 @import "./style/variables.scss";
 @import "./style/mixin.scss";
 
-// @font-face {
-//   font-family: "antique-olive";
-//   src: url("https://use.typekit.net/af/19dbce/000000000000000077359e80/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
-//       format("woff2"),
-//     url("https://use.typekit.net/af/19dbce/000000000000000077359e80/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
-//       format("woff"),
-//     url("https://use.typekit.net/af/19dbce/000000000000000077359e80/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
-//       format("opentype");
-//   font-display: auto;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-stretch: normal;
-// }
-
-// @font-face {
-//   font-family: "antique-olive";
-//   src: url("https://use.typekit.net/af/2794df/000000000000000077359e86/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3")
-//       format("woff2"),
-//     url("https://use.typekit.net/af/2794df/000000000000000077359e86/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3")
-//       format("woff"),
-//     url("https://use.typekit.net/af/2794df/000000000000000077359e86/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3")
-//       format("opentype");
-//   font-display: auto;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-stretch: normal;
-// }
-
-// @font-face {
-//   font-family: "antique-olive";
-//   src: url("https://use.typekit.net/af/ec0d4b/000000000000000077359e8b/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
-//       format("woff2"),
-//     url("https://use.typekit.net/af/ec0d4b/000000000000000077359e8b/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
-//       format("woff"),
-//     url("https://use.typekit.net/af/ec0d4b/000000000000000077359e8b/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
-//       format("opentype");
-//   font-display: auto;
-//   font-style: normal;
-//   font-weight: 700;
-//   font-stretch: normal;
-// }
-
 body {
   font-family: "antique-olive", sans-serif;
   background-color: $global-color-gray;
