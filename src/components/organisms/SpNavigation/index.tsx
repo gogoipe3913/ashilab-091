@@ -3,6 +3,7 @@ import style from "./style.module.scss";
 import classNames from "classnames";
 import { NAVIGATION_ITEMS } from "../Top";
 import LogoMain from "../../atoms/LogoMain";
+import { Link } from "react-scroll";
 
 const RESERVE_LINK =
   "https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/start";
@@ -78,15 +79,17 @@ const SpNavigation: React.FC = () => {
                     className={style.SpNavigationContents__navItemSeparator}
                   />
                 )}
-                <a
-                  href={`#${item.id}`}
+                <Link
+                  to={item.id}
+                  smooth={true}
+                  duration={600}
                   className={style.SpNavigationContents__navLink}
                   onClick={() => {
                     setIsDisplayedNavigation(false);
                   }}
                 >
                   {item.displayText}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

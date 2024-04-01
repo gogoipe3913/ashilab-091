@@ -3,6 +3,7 @@ import style from "./style.module.scss";
 import LogoMain from "../../atoms/LogoMain";
 import { NAVIGATION_ITEMS } from "../Top";
 import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";
+import { Link } from "react-scroll";
 
 const Footer: React.FC = () => {
   const isSp = useMediaQuery(mediaQuery.sp);
@@ -17,9 +18,14 @@ const Footer: React.FC = () => {
           <ul className={style.Footer__navItems}>
             {NAVIGATION_ITEMS.map((item, index) => (
               <li key={index} className={style.Footer__navItem}>
-                <a href={`#${item.id}`} className={style.Footer__navLink}>
+                <Link
+                  to={item.id}
+                  smooth={true}
+                  duration={600}
+                  className={style.Footer__navLink}
+                >
                   {item.displayText}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

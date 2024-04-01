@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import backgroundImage from "/images/top_bg.png";
 import style from "./style.module.scss";
 import LogoMain from "../../atoms/LogoMain";
@@ -40,11 +41,16 @@ const Top: React.FC = () => {
             <ul className={style.Top__navItems}>
               {NAVIGATION_ITEMS.map((item, index) => (
                 <li key={index} className={style.Top__navItem}>
-                  <a href={`#${item.id}`} className={style.Top__navLink}>
+                  <Link
+                    to={item.id}
+                    smooth={true}
+                    duration={600}
+                    className={style.Top__navLink}
+                  >
                     {`${item.displayText}${
                       index !== NAVIGATION_ITEMS.length - 1 ? "," : ""
                     }`}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
