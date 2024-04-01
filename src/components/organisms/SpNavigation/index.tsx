@@ -4,12 +4,22 @@ import classNames from "classnames";
 import { NAVIGATION_ITEMS } from "../Top";
 import LogoMain from "../../atoms/LogoMain";
 
+const RESERVE_LINK =
+  "https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/start";
+const REL = "nofollow";
+const TARGET = "_blank";
+
 const SpNavigation: React.FC = () => {
   const [isDisplayedNavigation, setIsDisplayedNavigation] = useState(false);
 
   return (
     <div className={style.SpNavigation}>
-      <a href="" className={style.SpNavigation__reserve}>
+      <a
+        href={RESERVE_LINK}
+        rel={REL}
+        target={TARGET}
+        className={style.SpNavigation__reserve}
+      >
         RESERVE
       </a>
       <button
