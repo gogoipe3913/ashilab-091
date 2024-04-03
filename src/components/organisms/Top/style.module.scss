@@ -8,7 +8,7 @@
   max-height: $page-max-height;
   color: $global-color-white;
 
-  @include respondToLg {
+  @include respondToSm {
     padding-top: 16px;
     width: 100%;
   }
