@@ -27,6 +27,14 @@
     max-height: $page-max-height;
     z-index: $global-elevation-background;
     object-fit: cover;
+    // transition
+    transition-timing-function: ease-in;
+    transition-duration: 0.8s;
+    opacity: 0;
+
+    &--displayed {
+      opacity: 1;
+    }
   }
 
   .Top__logoWrapper {

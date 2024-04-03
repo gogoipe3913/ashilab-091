@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import backgroundImage from "/images/top_bg.png";
 import style from "./style.module.scss";
 import LogoMain from "../../atoms/LogoMain";
 import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";
+import classNames from "classnames";
+import Loading from "../../atoms/Loading";
 
 export const NAVIGATION_ITEMS = [
   { id: "about", displayText: "ABOUT" },
@@ -16,9 +18,18 @@ export const NAVIGATION_ITEMS = [
 
 const Top: React.FC = () => {
   const isSp = useMediaQuery(mediaQuery.sp);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    // Loadingアニメーションが消えるのを待つ
+    setTimeout(() => {
+      setImageLoaded(true);
+    }, 300);
+  };
 
   return (
     <div id="Top" className={style.Top}>
+      <Loading isLoadedFirstImage={imageLoaded} />
       {isSp && (
         <p className={style.Top__address}>
           2-6-5, Komagata, Taito Ku, Tokyo To, 111-0043, Japan
@@ -29,7 +40,11 @@ const Top: React.FC = () => {
         alt="キッチンスタジオの画像"
         width={"100%"}
         height={"100%"}
-        className={style.Top__background}
+        onLoad={handleImageLoaded}
+        className={classNames(
+          style.Top__background,
+          imageLoaded ? style["Top__background--displayed"] : ""
+        )}
       />
       <div className={style.Top__logoWrapper}>
         <LogoMain />
