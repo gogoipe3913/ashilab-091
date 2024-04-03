@@ -24,7 +24,7 @@
     max-width: 800px;
     min-width: 700px;
 
-    @include respondToLg {
+    @include respondToSm {
       max-width: initial;
       min-width: initial;
       width: 100%;

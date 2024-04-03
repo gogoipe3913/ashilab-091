@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 export const mediaQuery = {
-  sp: "width < 992px",
-  pc: "992px <= width",
+  sp: "width < 576px",
+  pc: "576px <= width",
 };
 
 export const useMediaQuery = (query: string) => {

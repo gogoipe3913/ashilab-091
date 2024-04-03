@@ -18,7 +18,7 @@
   .LocationShooting__headingImage {
     max-width: 600px;
 
-    @include respondToLg {
+    @include respondToSm {
       width: 240px;
     }
   }
