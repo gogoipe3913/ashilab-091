@@ -44,7 +44,7 @@ const UsageFee: React.FC<UsageFeeProps> = ({ className = "" }) => {
       {isSp && (
         <h2 className={style.UsageFee__headingText}>
           <p className={style.UsageFee__headingTitle}>料金に関して</p>
-          <p className={style.UsageFee__headingSubtitle}>UsageFee</p>
+          <p className={style.UsageFee__headingSubtitle}>Usage Fee</p>
         </h2>
       )}
       <div className={style.UsageFee__heading}>
