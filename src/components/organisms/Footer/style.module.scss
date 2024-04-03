@@ -45,6 +45,7 @@
   .Footer__navItem {
     a {
       color: $global-color-black-2;
+      cursor: pointer;
       // transition
       transition-timing-function: ease-in;
       transition-duration: 0.3s;
