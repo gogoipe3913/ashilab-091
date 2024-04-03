@@ -15,6 +15,7 @@
   // transition
   transition-timing-function: ease-in;
   transition-duration: 0.3s;
+  z-index: $global-elevation-2;
 
   @media (hover: hover) {
     &.ReserveButton:hover {
