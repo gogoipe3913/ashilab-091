@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./style.module.scss";
 import classNames from "classnames";
 import { NAVIGATION_ITEMS } from "../Top";
@@ -12,6 +12,16 @@ const TARGET = "_blank";
 
 const SpNavigation: React.FC = () => {
   const [isDisplayedNavigation, setIsDisplayedNavigation] = useState(false);
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (!body) return;
+
+    if (isDisplayedNavigation) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "visible";
+    }
+  }, [isDisplayedNavigation]);
 
   return (
     <div className={style.SpNavigation}>
