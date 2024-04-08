@@ -22,6 +22,7 @@ const CookingClass: React.FC<CookingClassProps> = ({ className = "" }) => {
         <img
           src={isSp ? mainImageSp : mainImage}
           alt="料理教室のイメージ画像"
+          height={400}
           loading="lazy"
           className={style.CookingClass__headingImage}
         />

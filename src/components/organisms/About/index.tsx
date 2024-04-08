@@ -18,6 +18,7 @@ const About: React.FC<AboutProps> = ({ className = "" }) => {
         <img
           src={isSp ? mainImageSp : mainImage}
           alt="キッチンのイメージ画像"
+          height={400}
           className={style.About__headingImage}
         />
         <h2 className={style.About__headingText}>

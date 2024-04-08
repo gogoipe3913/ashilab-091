@@ -19,6 +19,7 @@ const FoodEvents: React.FC<FoodEventsProps> = ({ className = "" }) => {
         <img
           src={isSp ? mainImageSp : mainImage}
           alt="フードイベントのイメージ画像"
+          height={400}
           loading="lazy"
           className={style.FoodEvents__headingImage}
         />

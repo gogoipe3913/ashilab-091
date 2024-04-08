@@ -24,6 +24,7 @@ const LocationShooting: React.FC<LocationShootingProps> = ({
         <img
           src={isSp ? mainImageSp : mainImage}
           alt="撮影スタジオのイメージ画像"
+          height={isSp ? 400 : 898}
           loading="lazy"
           className={style.LocationShooting__headingImage}
         />

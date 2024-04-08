@@ -22,7 +22,7 @@ const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
           <iframe
             src="https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/services"
             width="100%"
-            height="100%"
+            height={700}
             frameBorder={0}
           />
         </div>

@@ -22,6 +22,7 @@ const BusinessParty: React.FC<BusinessPartyProps> = ({ className = "" }) => {
         <img
           src={isSp ? mainImageSp : mainImage}
           alt="交流会・懇親会のイメージ画像"
+          height={isSp ? 400 : 793}
           loading="lazy"
           className={style.BusinessParty__headingImage}
         />
