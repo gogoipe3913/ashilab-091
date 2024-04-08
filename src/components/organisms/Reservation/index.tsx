@@ -7,11 +7,18 @@ type ReservationProps = {
 };
 
 const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
+  const handleWheel: React.WheelEventHandler<HTMLDivElement> = (event) => {
+    event.stopPropagation();
+  };
+
   return (
     <div id="reservation" className={classNames(style.Reservation, className)}>
       <p className={style.Reservation__title}>【予約表】</p>
       <div className={style.Reservation__heading}>
-        <div className={style.Reservation__reservationPageFrame}>
+        <div
+          className={style.Reservation__reservationPageFrame}
+          onWheel={handleWheel}
+        >
           <iframe
             src="https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/services"
             width="100%"
