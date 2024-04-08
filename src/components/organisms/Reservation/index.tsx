@@ -19,12 +19,12 @@ const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
           className={style.Reservation__reservationPageFrame}
           onWheel={handleWheel}
         >
-          {/* <iframe
+          <iframe
             src="https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/services"
             width="100%"
             height="100%"
             frameBorder={0}
-          /> */}
+          />
         </div>
         <h2 className={style.Reservation__headingText}>
           <p className={style.Reservation__headingTitle}>ご予約はこちらまで</p>
