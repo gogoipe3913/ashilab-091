@@ -1,6 +1,6 @@
 import React from "react";
-import mainImage from "/public/images/image2.png";
-import mainImageSp from "/public/images/sp/image2.png";
+import mainImage from "/public/images/image2.jpg";
+import mainImageSp from "/public/images/sp/image2.jpg";
 import style from "./style.module.scss";
 import classNames from "classnames";
 import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";

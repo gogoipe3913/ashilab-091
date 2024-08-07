@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import mainImage from "/public/images/image3.png";
-import mainImageSp from "/public/images/sp/image3.png";
+import mainImage from "/public/images/image3.jpg";
+import mainImageSp from "/public/images/sp/image3.jpg";
 import style from "./style.module.scss";
 import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";
 

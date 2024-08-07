@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import backgroundImage from "/images/top_bg.png";
+import backgroundImage from "/images/top_bg.jpg";
 import style from "./style.module.scss";
 import LogoMain from "../../atoms/LogoMain";
 import { mediaQuery, useMediaQuery } from "../../hooks/mediaQuery";
