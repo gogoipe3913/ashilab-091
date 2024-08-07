@@ -20,7 +20,7 @@ const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
           onWheel={handleWheel}
         >
           <iframe
-            src="https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/services"
+            src="https://coubic.com/ashilab/services#pageContent"
             width="100%"
             height={700}
             frameBorder={0}
