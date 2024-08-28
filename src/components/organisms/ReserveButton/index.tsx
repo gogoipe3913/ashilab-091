@@ -1,8 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 
-const RESERVE_LINK =
-  "https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/start";
+const RESERVE_LINK = "https://coubic.com/ashilab/2371791";
 const REL = "nofollow";
 const TARGET = "_blank";
 
