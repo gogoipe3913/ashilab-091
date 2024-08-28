@@ -21,10 +21,16 @@
     max-width: 600px;
     width: 100%;
     height: 700px;
+    cursor: pointer;
 
     @include respondToSm {
       width: 240px;
     }
+  }
+
+  .Reservation__frameBody {
+    pointer-events: none;
+    overflow: hidden;
   }
 
   .Reservation__headingText {
