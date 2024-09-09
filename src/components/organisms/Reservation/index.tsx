@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 import style from "./style.module.scss";
 
-const RESERVE_LINK = "https://coubic.com/ashilab/2371791";
+const RESERVE_LINK = "https://coubic.com/ashilab/3243534";
 const REL = "nofollow";
 const TARGET = "_blank";
 
