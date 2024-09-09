@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 import style from "./style.module.scss";
 
@@ -11,9 +11,28 @@ type ReservationProps = {
 };
 
 const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
+  const [isMobile, setIsMobile] = useState(false);
+  // なぜかiframeRefを宣言すると内容が丁度いい高さにスクロールされるので残す
+  // @ts-ignore
+  const iframeRef = useRef(null);
   const handleWheel: React.WheelEventHandler<HTMLDivElement> = (event) => {
     event.stopPropagation();
   };
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    setIsMobile(mediaQuery.matches);
+    const handleResize = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
 
   return (
     <div id="reservation" className={classNames(style.Reservation, className)}>
@@ -31,7 +50,7 @@ const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
           <iframe
             src="https://coubic.com/ashilab/services#pageContent"
             width="100%"
-            height={700}
+            height={isMobile ? 500 : 700}
             frameBorder={0}
             onWheel={handleWheel}
             className={style.Reservation__frameBody}
