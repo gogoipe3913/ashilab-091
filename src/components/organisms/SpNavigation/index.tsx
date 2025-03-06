@@ -5,8 +5,7 @@ import { NAVIGATION_ITEMS } from "../Top";
 import LogoMain from "../../atoms/LogoMain";
 import { Link } from "react-scroll";
 
-const RESERVE_LINK =
-  "https://squareup.com/appointments/book/8rr5l1bshnapry/LJ0H72RBE83AV/start";
+const RESERVE_LINK = "https://coubic.com/ashilab/3243534";
 const REL = "nofollow";
 const TARGET = "_blank";
 
