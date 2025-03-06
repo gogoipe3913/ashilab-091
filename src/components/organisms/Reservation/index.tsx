@@ -53,6 +53,7 @@ const Reservation: React.FC<ReservationProps> = ({ className = "" }) => {
             height={isMobile ? 500 : 700}
             frameBorder={0}
             onWheel={handleWheel}
+            loading="lazy"
             className={style.Reservation__frameBody}
           />
         </a>
